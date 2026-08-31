@@ -1,0 +1,15 @@
+{
+  "service_name": "billing-api",
+  "environment": "production",
+  "team_owner": "payments-platform",
+  "on_call_rotation": ["alex", "priya", "sam"],
+  "sla": {
+    "uptime_target_pct": 99.9,
+    "response_time_ms_p99": 400
+  },
+  "dependencies": ["postgres", "redis", "stripe-webhook-listener"],
+  "feature_flags": {
+    "new_checkout_flow": true,
+    "delayed_invoicing": false
+  }
+}

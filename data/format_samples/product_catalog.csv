@@ -1,0 +1,8 @@
+product_id,name,category,price_usd,stock_qty
+P-1001,Wireless Mouse,Electronics,19.99,342
+P-1002,Mechanical Keyboard,Electronics,89.99,128
+P-1003,Standing Desk,Furniture,349.00,54
+P-1004,Desk Lamp,Furniture,24.50,210
+P-1005,Noise Cancelling Headphones,Electronics,199.99,76
+P-1006,Office Chair,Furniture,159.00,93
+P-1007,USB-C Hub,Electronics,34.99,410

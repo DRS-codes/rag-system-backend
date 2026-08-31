@@ -1,0 +1,10 @@
+14/03/24, 10:15 AM - Maria: Hey, are we still on for the product review tomorrow?
+14/03/24, 10:16 AM - David: Yes, 2pm works for me. I'll bring the updated mockups.
+14/03/24, 10:17 AM - Maria: Perfect. Can you also share the user testing notes before then?
+14/03/24, 10:20 AM - David: Sure thing, sending them over now.
+Quick summary: 8 out of 10 testers found the new checkout flow faster than the old one.
+The main complaint was the confirmation page taking too long to load.
+14/03/24, 10:22 AM - Maria: Good to know, thanks! I'll flag the loading issue to the backend team.
+14/03/24, 2:05 PM - David: Meeting notes from today - we're moving forward with the new flow,
+targeting a rollout to 10% of users next Monday for A/B testing.
+14/03/24, 2:06 PM - Maria: Sounds good, I'll set up the analytics dashboard for it.

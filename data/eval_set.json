@@ -1,0 +1,52 @@
+[
+  {
+    "question": "How do I authenticate requests to the Nimbus API?",
+    "ground_truth_doc_ids": ["authentication"],
+    "reference_answer": "Include an Authorization: Bearer <API_KEY> header on every request, using a key generated from Settings > API Keys."
+  },
+  {
+    "question": "What happens to my old API key after I rotate it?",
+    "ground_truth_doc_ids": ["authentication"],
+    "reference_answer": "The old key stays valid for 24 hours after rotation to allow a graceful cutover, then it is automatically revoked and cannot be recovered."
+  },
+  {
+    "question": "What's the difference between using an API key and OAuth2 for authentication?",
+    "ground_truth_doc_ids": ["authentication"],
+    "reference_answer": "Static API keys are for server-to-server use, while OAuth2's authorization code flow is for apps acting on behalf of end users; OAuth2 access tokens expire after 1 hour and are refreshed with a refresh token."
+  },
+  {
+    "question": "How many requests per minute can I make on the free tier?",
+    "ground_truth_doc_ids": ["rate_limits"],
+    "reference_answer": "The free tier allows 60 requests per minute and 5,000 requests per day."
+  },
+  {
+    "question": "What should I do if I get a 429 error?",
+    "ground_truth_doc_ids": ["rate_limits"],
+    "reference_answer": "Respect the Retry-After header and use exponential backoff rather than retrying immediately, since immediate retries can worsen the backlog."
+  },
+  {
+    "question": "How can I monitor my API usage before hitting the rate limit?",
+    "ground_truth_doc_ids": ["rate_limits"],
+    "reference_answer": "Check the X-RateLimit-Limit, X-RateLimit-Remaining, and X-RateLimit-Reset headers included on every response."
+  },
+  {
+    "question": "If I delete a document, how long until it's completely unrecoverable?",
+    "ground_truth_doc_ids": ["data_retention"],
+    "reference_answer": "The document is removed immediately from the primary database, but backups are kept for disaster recovery for up to 14 days, after which it is unrecoverable."
+  },
+  {
+    "question": "Does Nimbus support storing my data only in the EU?",
+    "ground_truth_doc_ids": ["data_retention"],
+    "reference_answer": "Yes, Enterprise customers can request EU data residency, which pins storage and processing to EU infrastructure for GDPR compliance."
+  },
+  {
+    "question": "What data does Nimbus keep even after I delete my account?",
+    "ground_truth_doc_ids": ["data_retention"],
+    "reference_answer": "Billing records are retained for 7 years for financial recordkeeping compliance, even after full account deletion."
+  },
+  {
+    "question": "Is the rate limit shared across all my API keys or separate per key?",
+    "ground_truth_doc_ids": ["rate_limits"],
+    "reference_answer": "Rate limits are enforced per API key, not per account, so multiple keys on one application get independent limits."
+  }
+]
